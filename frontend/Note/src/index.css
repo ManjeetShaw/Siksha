@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* slim, unobtrusive scrollbars for nav rails / drawers */
+.brand-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.brand-scroll::-webkit-scrollbar-thumb {
+  background: rgba(32, 22, 15, 0.15);
+  border-radius: 10px;
+}
+.brand-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.35s ease-out both;
+}
